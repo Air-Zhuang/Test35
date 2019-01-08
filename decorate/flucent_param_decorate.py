@@ -15,8 +15,8 @@ print()
 '''创建一个装饰器工厂函数，把参数传给它，返回真正的装饰器，
     返回的装饰器才是应用到目标函数上的装饰器'''
 registry=set()
-def register(active=True):
-    def decorate(func):
+def register(active=True):      #装饰器工厂
+    def decorate(func):         #真正的装饰器
         print('running register(active=%s)->decorate(%s)' % (active,func))
         if active:
             registry.add(func)

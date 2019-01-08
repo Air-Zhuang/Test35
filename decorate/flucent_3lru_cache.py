@@ -1,4 +1,4 @@
-from Test35.decorate.flucent_2wraps import clock2
+from decorate.flucent_2wraps import clock2
 import functools
 
 @clock2

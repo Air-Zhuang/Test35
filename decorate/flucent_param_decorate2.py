@@ -2,7 +2,7 @@ import time
 
 DEFAULT_FMT='[{elapsed:0.8f}s] {name}({args}) -> {result}'
 
-def clock(fmt=DEFAULT_FMT):
+def clock(fmt=DEFAULT_FMT):     #装饰器工厂
     def decorate(func):
         def clocked(*_args):
             t0=time.time()
