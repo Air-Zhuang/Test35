@@ -1,4 +1,4 @@
-l=[1,2,3,4]
-l.extend(range(5))
+import functools
 
-print(l)
+for k,v in enumerate(range(3)):
+    print(k,v)

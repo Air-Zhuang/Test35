@@ -30,7 +30,7 @@ print(info2)
 info2=re.finditer(r'\d+',str2)      #finditer：返回可迭代对象
 print([i.group() for i in info2])
 info2=re.search(r'\d+',str2)        #search：直到找到一个匹配的对象
-print(info2)
+print(info2.group())
 info2=re.match(r'\d+',str2)         #match：第一个字符匹配不上直接返回None
 print(info2)
 ma=re.fullmatch(r'abc','abc')       #fullmatch：字符串前后必须全部匹配才可以
@@ -53,8 +53,8 @@ print(info.group())
 print()
 
 
-str3='imooc videonum=1000'  #替换
-info3=re.sub(r'\d+','1001',str3)
+str3='imooc videonum=1000'
+info3=re.sub(r'\d+','1001',str3)    #直接使用字符串替换
 print(info3)
 print()
 
@@ -62,7 +62,7 @@ def add1(match):
     val=match.group()
     num=int(val)+1
     return str(num)
-info4=re.sub(r'\d+',add1,str3)
+info4=re.sub(r'\d+',add1,str3)      #也可使用函数替换
 print(info4)
 print()
 
@@ -82,7 +82,25 @@ str5='''
 print(re.sub('(\d{4})-(\d{2}-(\d{2}))',r'\2/\3/\1',str5))
 print(re.sub('(?P<year>\d{4})-(?P<month>\d{2})-(?P<day>\d{2})',r'\g<month>/\g<day>/\g<year>',str5))
 
+www='https://www.magicshop.top'
+print(re.sub(r'^(?P<head>http|https)://www\..+?\.(?P<tell>com|cn|top)$',r'\g<tell>.magicshop.\g<head>',www))
+
 txt2=re.split('\w+',str5)
 print(txt2)
 txt3=re.split('\W+',str5)
 print(txt3)
+
+print("========================Utils===========================================")
+print(re.findall(r'^1[38]\d{9}','18345678900'))     #手机号码
+
+print(re.findall(r'.+(\$.{2})','aaa$bbb'))
+
+ma=re.match(r'\w+@\w+\.(com|cn)','abc@123.com')     #邮箱
+print(ma.group())
+
+www='https://www.magicshop.top'
+ma=re.match(r'^(?P<head>http|https)://www\..+?\.(?P<tell>com|cn|top)$',www)     #网址
+print(ma.group())
+
+ma=re.match(r'^(1|3)\d{16}(\d|x|X)$','370203199506067910')      #身份证
+print(ma.group())

@@ -12,6 +12,8 @@ print()
 
 triple=functools.partial(lambda a,b:a*b,3)
 print(triple(7))
+triple2=functools.partial(lambda a,b,c:a*b*c,2,3)
+print(triple2(4))
 print(list(map(triple,range(1,10))))
 print()
 
