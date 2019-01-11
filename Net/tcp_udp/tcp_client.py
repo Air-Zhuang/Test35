@@ -1,6 +1,6 @@
-from socket import *
+import socket
 
-sockfd=socket(AF_INET,SOCK_STREAM)
+sockfd=socket.socket(socket.AF_INET,socket.SOCK_STREAM)
 
 server_addr=('127.0.0.1',9998)
 sockfd.connect(server_addr)
@@ -15,6 +15,6 @@ while True:
     if data.decode("utf-8")=="qq":
         print("客户端关闭：Bye~~")
         break
-    print("客户端响应：",data.decode("utf-8"))
+    print("服务端响应：",data.decode("utf-8"))
 
 sockfd.close()

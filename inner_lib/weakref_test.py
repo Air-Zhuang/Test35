@@ -17,7 +17,7 @@ a2()
 print(a2() is None)
 print()
 '''----------------------------------------------------------------------------------'''
-class Data(object):
+class Data:
     def __init__(self,value,owner):
         self.owner=weakref.ref(owner) #使用弱引用，这样不会增加Node的引用计数
         self.value=value
@@ -25,7 +25,7 @@ class Data(object):
         return "%s's data,value is %s" % (self.owner(),self.value)
     def __del__(self):
         print('in Data.__del__')
-class Node(object):
+class Node:
     def __init__(self,value):
         self.data=Data(value,self)
     def __del__(self):
@@ -64,9 +64,3 @@ head = create_linklist(1000)
 print(head.right, head.right.left)
 input()
 head = None
-
-import time
-for _ in range(1000):
-    time.sleep(1)
-    print('run...')
-input('wait...')

@@ -9,12 +9,12 @@ send() 特征
 * recv是向发送缓冲区发送内容，当缓冲区为满阻塞
 '''
 
-from socket import *
+import socket
 
-sockfd = socket(AF_INET,SOCK_STREAM)
+sockfd = socket.socket(socket.AF_INET,socket.SOCK_STREAM)   #AF_INET:ipv4协议
 
-sockfd.bind(("localhost",9998))
-sockfd.listen(1)
+sockfd.bind(("0.0.0.0",9998))
+sockfd.listen()
 
 print("Waiting for connect...")
 connfd,addr = sockfd.accept()

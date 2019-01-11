@@ -1,3 +1,21 @@
+'''
+__new__(cls)   用来初始化类,元类编程!!!!(metaclass.py)
+__init__(self) 用来初始化对象
+'''
+
+class A:
+    def __new__(cls, *args, **kwargs):#一般不在这里用，一般在元类编程中用
+        print("__new__")
+        # 如果没有返回则不会进入到__init__方法中
+        # 在普通的类中使用__new__不能返回*args, **kwargs
+        return super().__new__(cls)
+    def __init__(self,x):
+        print("__init__")
+        self.x=x
+
+A(1)
+print()
+
 '''内置不可变数据类型'''
 class RoundFloat(float):
     def __new__(cls, val):
@@ -28,6 +46,7 @@ print(len(sortList([4,2,45,23,6])))
 print(type(len(sortList([4,2,45,23,6]))))
 t=IntTuple([1,-1,'abc',6,['x','y'],3])
 print(t)
+print()
 
 '''内置可变数据类型'''
 '''=================UserDict========================================='''

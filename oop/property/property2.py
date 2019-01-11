@@ -1,45 +1,38 @@
-'''如果 c 是 C 的实例化, c.x 将触发 getter,c.x = value 将触发 setter ， del c.x 触发 deleter。'''
-class C(object):
-    def __init__(self):
-        self._x = None
+'''如何创建可管理的对象属性'''
 
-    def getx(self):
-        return self._x
+'''
+在python中:property()方法整合了get方法，set方法
+可管理的对象属性
+'''
 
-    def setx(self, value):
-        self._x = value
+#使用property函数为类创建可管理属性
 
-    def delx(self):
-        del self._x
+import math
 
-    x = property(getx, setx, delx, "I'm the 'x' property.")
-
-'''将 property 函数用作装饰器可以很方便的创建只读属性：'''
-'''上面的代码将 voltage() 方法转化成同名只读属性的 getter 方法。'''
-class Parrot(object):
-    def __init__(self):
-        self._voltage = 100000
-
+class Circle(object):
+    def __init__(self,radius):
+        self.radius=radius
+    def getRadius(self):
+        return round(self.radius,2)
+    def setRadius(self,value):
+        if not isinstance(value,(int,float)):
+            raise ValueError('wrong type.')
+        self.radius=float(value)
+    '''property函数用作装饰器的形式'''
     @property
-    def voltage(self):
-        """Get the current voltage."""
-        return self._voltage
+    def S(self):
+        return self.radius**2*math.pi
+    @S.setter
+    def S(self,s):
+        self.radius=math.sqrt(s/math.pi)
+    '''property(fget=None,fset=None,fdel=None,doc=None)'''
+    R=property(getRadius,setRadius)     #整合set和get
 
-'''property 的 getter,setter 和 deleter 方法同样可以用作装饰器：'''
-'''这个代码和第一个例子完全相同，但要注意这些额外函数的名字和 property 下的一样，例如这里的 x。'''
-class Parrot2(object):
-    def __init__(self):
-        self._x = None
-
-    @property
-    def x(self):
-        """I'm the 'x' property."""
-        return self._x
-
-    @x.setter
-    def x(self, value):
-        self._x = value
-
-    @x.deleter
-    def x(self):
-        del self._x
+c=Circle(3.2)
+print(c.R) #相当于get
+c.R=5.2   #相当于set
+print(c.R)
+print()
+c.S=99.88
+print(c.S)
+print(c.R)
