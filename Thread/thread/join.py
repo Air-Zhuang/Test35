@@ -12,7 +12,7 @@ python线程join的正解
 4 如果线程daemon属性为False， 则join里的timeout参数无效。主线程会一直等待子线程结束。
 
 5 如果线程daemon属性为True， 则join里的timeout参数是有效的， 主线程会等待timeout时间后，结束子线程。
-    此处有一个坑，即如果同时有N个子线程join(timeout），那么实际上主线程会等待的超时时间最长为 N ＊ timeout， 因为每个子线程的超时开始时刻是上一个子线程超时结束的时刻。
+    此处有一个坑，即如果同时有N个子线程join(timeout），那么实际上主线程会等待的超时时间最长为 N * timeout， 因为每个子线程的超时开始时刻是上一个子线程超时结束的时刻。
 '''
 
 import threading, time

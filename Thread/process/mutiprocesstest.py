@@ -1,42 +1,32 @@
+'''
+尽量用ProcessPoolExecutor进行多进程编程
+'''
+
 import multiprocessing as mp
 import threading as td
 import time,os
 
-'''tarena'''
 # def worker(sec,name):
 #     for i in range(3):
 #         time.sleep(sec)
 #         print(name)
-# if __name__ == '__main__':
-#     p=mp.Process(target=worker,args=(2,),kwargs={'name':'Air'},name="Process1")
+#
+# if __name__=='__main__':    # windows下多进程必须在主函数中运行
+#     p=mp.Process(target=worker,args=(0.3,),kwargs={'name':'Air'},name="Process1")
 #     p.start()
 #     print("获取进程名称",p.name)
 #     print("获取进程PID",p.pid)
 #     print("进程alive状况",p.is_alive())
 #     p.join()
+#     print()
 
-'''完整的线程和进程创建对比代码'''
-
-# def job(a,d):
-#     print('aaaaa')
-
-# if __name__ == '__main__':
-#     t1 = td.Thread(target=job,args=(1,2))
-#     p1 = mp.Process(target=job,args=(1,2))
-#     t1.start()
-#     p1.start()
-#     t1.join()
-#     p1.join()
 '''
-存储进程输出Queue          (效率一般，广泛灵活)
-    Queue的功能是将每个核或线程的运算结果放在队里中， 等到每个线程或核运行完毕后再从队列中取出结果， 
-    继续加载运算。原因很简单, 多线程调用的函数不能有返回值, 所以使用Queue存储多个线程运算的结果
-'''
+# 存储进程输出Queue          (效率一般，广泛灵活)
+#     Queue的功能是将每个核或线程的运算结果放在队里中， 等到每个线程或核运行完毕后再从队列中取出结果， 
+#     继续加载运算。原因很简单, 多线程调用的函数不能有返回值, 所以使用Queue存储多个线程运算的结果
+# '''
 # def job(q):
-#     res=0
-#     for i in range(1000):
-#         res+=i+i**2+i**3
-#     q.put(res)    #queue
+#     q.put(1)    #放入数据
 #
 # if __name__=='__main__':
 #     q = mp.Queue()
@@ -71,12 +61,16 @@ import time,os
 #     return x*x
 # def multicore():
 #     pool = mp.Pool()
+#
 #     res = pool.map(job, range(10))
 #     print(res)
-#     res = pool.apply_async(job, (2,))
+#
+#     res = pool.apply_async(job, (2,))                               # 只能传一个值
 #     print(res.get())                                                # 用get获得结果
+#
 #     multi_res = [pool.apply_async(job, (i,)) for i in range(10)]    # 迭代器，i=0时apply一次，i=1时apply一次等等
 #     print([res.get() for res in multi_res])                         # 从迭代器中取出
+#
 #     pool.close()
 #     pool.join()
 # if __name__ == '__main__':
@@ -93,8 +87,9 @@ import time,os
 # value2 = mp.Value('d', 3.14)
 #
 # array = mp.Array('i', [1, 2, 3, 4])
+
 '''
-线程通讯：Pipe                   (效率一般，多用于父子进程)
+线程通讯：Pipe                   (效率一般，多用于父子进程)(只能用于两个进程间通信)
     fd1,fd2=Pipe(duplex=True)
     功能：创建管道
     参数：默认表示双向管道，如果设置为False则为单向管道
@@ -145,22 +140,21 @@ sem.acquire()   将信号量数量减一   信号量为0会阻塞
 sem.release()   将信号量数量加一
 sem.get_value() 获取当前信号量的值
 '''
-#创建信号量
-sem=mp.Semaphore(3)
-def fun():
-    print("进程%d等待信号量" % os.getpid())
-    #消耗一个信号量
-    sem.acquire()
-    print("进程%d消耗信号量" % os.getpid())
-    time.sleep(3)
-    sem.release()
-    print("进程%d添加信号量" % os.getpid())
-if __name__ == '__main__':
-    jobs=[]
-    for i in range(4):
-        p=mp.Process(target=fun)
-        jobs.append(p)
-        p.start()
-    for i in jobs:
-        i.join()
-    print(sem.get_value())
+# #创建信号量
+# sem=mp.Semaphore(3)
+# def fun():
+#     print("进程%d等待信号量" % os.getpid())
+#     sem.acquire()       #信号量减一
+#     print("进程%d消耗信号量" % os.getpid())
+#     time.sleep(3)
+#     sem.release()       #信号量加一
+#     print("进程%d添加信号量" % os.getpid())
+# if __name__ == '__main__':
+#     jobs=[]
+#     for i in range(4):
+#         p=mp.Process(target=fun)
+#         jobs.append(p)
+#         p.start()
+#     for i in jobs:
+#         i.join()
+#     print(sem.get_value())

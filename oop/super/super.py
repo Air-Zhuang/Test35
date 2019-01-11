@@ -1,3 +1,9 @@
+'''
+__init__方法遵循正常的继承
+super().__init__()      调用父类的初始化方法，使用父类的参数
+super().__init__(a,b)   调用父类的初始化方法，使用子类的参数
+'''
+
 '''==============================================='''
 class A:
     def __init__(self):
@@ -21,6 +27,19 @@ class B(A):
 
 b=B()       #加上super之后调用父类的初始化方法
 print()
+'''==============================================='''
+class A:
+    def __init__(self,a=1,b=2):
+        self.a=a
+        self.b=b
+
+class B(A):
+    def __init__(self,a,b):     #如果有子类有__init__方法而又没有调用super().__init__()，则不会自动调用父类的初始化方法
+        # super().__init__(a=a+100,b=b+100)
+        # super().__init__()
+        pass
+b=B(11,22)
+# print(b.a)
 '''==============================================='''
 from threading import Thread
 
