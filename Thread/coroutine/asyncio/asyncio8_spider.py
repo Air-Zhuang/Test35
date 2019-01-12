@@ -16,31 +16,22 @@ async def fetch(url,session):
     async with sem:
         try:
             async with session.get(url) as resp:      #完成一次get请求
-                print("status:".format(resp.status))
+                print("status:{}".format(resp.status))
                 if resp.status in [200,201]:
                     data=await resp.text()
                     return data
         except Exception as e:
-            print(e)
+            print("!!!!Exception:",e)
 
 
 def extract_urls(html):             #提取url是cpu操作，无需改成协程
-    '''文章解析出url'''
-    # TODU   去掉注释的代码
-    # urls=[]
+    '''文章解析出url放入seen_urls队列'''
     pq=PyQuery(html)
     for link in pq.items("a"):
         url=link.attr("href")       #去掉已经爬取过的url，放入到等待爬取的列表
         if url and url.startswith("http") and url not in seen_urls:
-            # urls.append(urls)
             waitting_urls.append(url)
-    # return urls
 
-
-async def init_urls(url,session):
-    html=await fetch(url,session)
-    seen_urls.add(url)
-    extract_urls(html)
 
 async def article_handler(url,session,pool):
     '''获取文章详情并解析入库'''
@@ -56,7 +47,7 @@ async def article_handler(url,session,pool):
 
 async def consumer(pool):
     '''控制爬虫，从队列中获取url交给文章解析函数'''
-    async with aiohttp.ClientSession() as session:
+    async with aiohttp.ClientSession() as session:  #全局唯一一次创建session
         while not stopping:
             # TODU   等待队列改写未queue
             if len(waitting_urls)==0:
@@ -68,14 +59,10 @@ async def consumer(pool):
             if re.match('http://.*?jobbole.com/\d+/',url):
                 if url not in seen_urls:
                     asyncio.ensure_future(article_handler(url,session,pool))
-                    await asyncio.sleep(1)
-            else:
-                if url not in seen_urls:
-                    asyncio.ensure_future(init_urls(url,session))
+                    await asyncio.sleep(0.5)
 
 async def main(loop):
-    #等待mysql连接建立好
-    # TODU 最后两个参数
+    # 全局唯一一次创建pool
     pool=await aiomysql.create_pool(host='127.0.0.1',port=3306,user='root',password='123456',db='article_spider',loop=loop,charset='utf8',autocommit=True)
 
     async with aiohttp.ClientSession() as session:
