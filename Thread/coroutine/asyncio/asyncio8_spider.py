@@ -1,0 +1,90 @@
+import asyncio
+import re
+import aiohttp
+import aiomysql
+from pyquery import PyQuery
+
+stopping=False
+start_url="http://www.jobbole.com/"
+waitting_urls=[]
+seen_urls=set()         #已经爬取到的url
+
+sem=asyncio.Semaphore(3)        #设置并发数为3
+
+async def fetch(url,session):
+    '''发送http请求'''
+    async with sem:
+        try:
+            async with session.get(url) as resp:      #完成一次get请求
+                print("status:".format(resp.status))
+                if resp.status in [200,201]:
+                    data=await resp.text()
+                    return data
+        except Exception as e:
+            print(e)
+
+
+def extract_urls(html):             #提取url是cpu操作，无需改成协程
+    '''文章解析出url'''
+    # TODU   去掉注释的代码
+    # urls=[]
+    pq=PyQuery(html)
+    for link in pq.items("a"):
+        url=link.attr("href")       #去掉已经爬取过的url，放入到等待爬取的列表
+        if url and url.startswith("http") and url not in seen_urls:
+            # urls.append(urls)
+            waitting_urls.append(url)
+    # return urls
+
+
+async def init_urls(url,session):
+    html=await fetch(url,session)
+    seen_urls.add(url)
+    extract_urls(html)
+
+async def article_handler(url,session,pool):
+    '''获取文章详情并解析入库'''
+    html=await fetch(url,session)
+    seen_urls.add(url)
+    extract_urls(html)
+    pq=PyQuery(html)
+    title=pq("title").text()
+    async with pool.acquire() as conn:
+        async with conn.cursor() as cur:
+            insert_sql="insert into jobbole_article(title) values('{}')".format(title)
+            await cur.execute(insert_sql)
+
+async def consumer(pool):
+    '''控制爬虫，从队列中获取url交给文章解析函数'''
+    async with aiohttp.ClientSession() as session:
+        while not stopping:
+            # TODU   等待队列改写未queue
+            if len(waitting_urls)==0:
+                print("waitting_urls为空,等待0.5秒")
+                await asyncio.sleep(0.5)
+                continue
+            url=waitting_urls.pop()
+            print("start get url:{}".format(url))
+            if re.match('http://.*?jobbole.com/\d+/',url):
+                if url not in seen_urls:
+                    asyncio.ensure_future(article_handler(url,session,pool))
+                    await asyncio.sleep(1)
+            else:
+                if url not in seen_urls:
+                    asyncio.ensure_future(init_urls(url,session))
+
+async def main(loop):
+    #等待mysql连接建立好
+    # TODU 最后两个参数
+    pool=await aiomysql.create_pool(host='127.0.0.1',port=3306,user='root',password='123456',db='article_spider',loop=loop,charset='utf8',autocommit=True)
+
+    async with aiohttp.ClientSession() as session:
+        html = await fetch(start_url, session)
+        seen_urls.add(start_url)
+        extract_urls(html)
+    asyncio.ensure_future(consumer(pool))   #传递连接池
+
+if __name__ == '__main__':
+    loop=asyncio.get_event_loop()
+    asyncio.ensure_future(main(loop))
+    loop.run_forever()
