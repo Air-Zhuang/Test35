@@ -3,6 +3,7 @@ Lock:
     协程因为是单线程，所以一般不需要加锁，但是有需要锁的情况。
     比如下面，当parse_stuff调用get_stuff的时候不希望use_stuff也调用get_stuff。所以可以用asyncio.Lock来实现
 Queue:
+    非线程安全
     协程间的通讯比较容易，可以声明一个全局变量list来实现，但是当需要限制长度的时候就需要使用asyncio.Queue来实现
 '''
 
