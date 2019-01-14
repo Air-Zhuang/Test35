@@ -1,8 +1,8 @@
-l=[1,3,5,7,9]
-
-i=0
-while True:
-    i+=1
-    print(l[i])
-    if l[i]%2==0:
-        print(i)
+import random
+total_sleep_time = 0
+for _ in range(20):
+    sleep_for = random.uniform(0.05, 1.0)
+    print(sleep_for)
+    total_sleep_time += sleep_for
+    # print(total_sleep_time)
+        # queue.put_nowait(sleep_for)

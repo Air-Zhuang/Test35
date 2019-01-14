@@ -2,11 +2,11 @@ import asyncio
 import re
 import aiohttp
 import aiomysql
-from pyquery import PyQuery
+from pyquery import PyQuery #解析HTML的库
 
 stopping=False
 start_url="http://www.jobbole.com/"
-waitting_urls=[]
+waitting_urls=asyncio.Queue()
 seen_urls=set()         #已经爬取到的url
 
 sem=asyncio.Semaphore(3)        #设置并发数为3
@@ -30,7 +30,7 @@ def extract_urls(html):             #提取url是cpu操作，无需改成协程
     for link in pq.items("a"):
         url=link.attr("href")       #去掉已经爬取过的url，放入到等待爬取的列表
         if url and url.startswith("http") and url not in seen_urls:
-            waitting_urls.append(url)
+            waitting_urls.put_nowait(url)
 
 
 async def article_handler(url,session,pool):
@@ -49,17 +49,13 @@ async def consumer(pool):
     '''控制爬虫，从队列中获取url交给文章解析函数'''
     async with aiohttp.ClientSession() as session:  #全局唯一一次创建session
         while not stopping:
-            # TODU   等待队列改写未queue
-            if len(waitting_urls)==0:
-                print("waitting_urls为空,等待0.5秒")
-                await asyncio.sleep(0.5)
-                continue
-            url=waitting_urls.pop()
+            url=await waitting_urls.get()       #获取一个url,如果获取不到会一直等待
             print("start get url:{}".format(url))
             if re.match('http://.*?jobbole.com/\d+/',url):
                 if url not in seen_urls:
                     asyncio.ensure_future(article_handler(url,session,pool))
                     await asyncio.sleep(0.5)
+            waitting_urls.task_done()           #指名获取url任务已完成
 
 async def main(loop):
     # 全局唯一一次创建pool
