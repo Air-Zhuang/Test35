@@ -5,7 +5,7 @@ class Field:
     pass
 class IntField(Field):
     def __init__(self,db_column,min_value=None,max_value=None):
-        self._value=None
+        self._value=None            #保存变量,一定要有
         self.db_column=db_column
         self.min_value=min_value
         self.max_value=max_value
@@ -88,7 +88,7 @@ class ModelMetaClass(type):
         '_meta': {'db_table': 'userr'}, 
         'fields': {'name': <__main__.CharField object at 0x0000023B73038A58>, 'age': <__main__.IntField object at 0x0000023B73040320>}}
         '''
-        return super().__new__(cls,*args,**kwargs)
+        return super().__new__(cls,*args,**kwargs)      #必需有return才能到__init__方法中
 
 class BaseModel(metaclass=ModelMetaClass):
     # def __init__(self,*args,**kwargs):    #解除封印可使用user=User(name="air",age=23)的A级忍术

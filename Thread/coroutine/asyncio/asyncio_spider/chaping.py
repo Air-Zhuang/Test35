@@ -32,7 +32,7 @@ async def article_handler(url,session,pool):
             insert_sql="insert into chaping_table(post_url,reason) values('{}','{}')".format(url,title)
             await cur.execute(insert_sql)
 
-async def consumer(pool):
+async def consumer(pool,delay_time=0.5):
     async with aiohttp.ClientSession() as session:
         while not stopping:
             url=await waitting_queue.get()
@@ -40,7 +40,7 @@ async def consumer(pool):
             if url.startswith('https://mjzj.com'):
                 if url not in seen_urls:
                     asyncio.ensure_future(article_handler(url,session,pool))
-                    await asyncio.sleep(0.5)
+                    await asyncio.sleep(delay_time)
             waitting_queue.task_done()
 
 '''获取url,每4秒爬一次接口页,添加到待爬取队列'''
@@ -50,23 +50,24 @@ def extract_url(s):
 
 async def extract_urls(url,session):
     original_url_list =await fetch_http(url,session,"json")
-    print("len:",len(original_url_list))
     for i in range(len(original_url_list)):
         waitting_queue.put_nowait(extract_url(original_url_list[i]))
-    await asyncio.sleep(4)
 
-async def gene_urls(start_page):
-    page=start_page
-    start_url = "https://mjzj.com/web-api/reviewer-exposure/views?page=" + str(page) + "&market=美国"
+async def gene_urls(start_page,delay_time=0.5):
     async with aiohttp.ClientSession() as session:
-        await extract_urls(start_url,session)
-    await gene_urls(start_page+1)
+        while not stopping:
+            page = start_page
+            start_url = "https://mjzj.com/web-api/reviewer-exposure/views?page=" + str(page) + "&market=美国"
+            await extract_urls(start_url,session)
+            print("page:", start_page)
+            start_page += 1
+            await asyncio.sleep(delay_time)
 
 '''启动函数'''
 async def main(loop):
     pool=await aiomysql.create_pool(host='127.0.0.1',port=3306,user='root',password='123456',db='chaping',loop=loop,charset='utf8',autocommit=True)
 
-    asyncio.ensure_future(gene_urls(1))
+    asyncio.ensure_future(gene_urls(1,delay_time=4))
     asyncio.ensure_future(consumer(pool))
 
 

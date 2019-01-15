@@ -3,3 +3,5 @@ aiohttp
 aiomysql
 gevent
 pyquery
+pytest-asyncio
+aiofiles

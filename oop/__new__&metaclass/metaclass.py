@@ -61,9 +61,9 @@ class User2(metaclass=MetaClass):
 user=User("air100%")
 print(user)
 print(user.title)
-user=User("air200%")
-print(user)
-print(user.title)
+user2=User2("air200%")
+print(user2)
+print(user2.title)
 
 
 
