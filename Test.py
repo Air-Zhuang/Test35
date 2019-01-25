@@ -1,19 +1,14 @@
 import asyncio
-import time
+import aiomysql
 
-sem=asyncio.Semaphore(3)
+async def db_setup(app, loop):
+    pool = await aiomysql.create_pool(**app.config['MYSQL'],loop=loop)
+    print("mysql start successfully")       #初始化aiomysql
+    return pool
 
-async def get_html(url):
-    async with sem:
-        print("==========start get url==========")
-        print(url)
-        await asyncio.sleep(1)                                  #不能用time.sleep()
-        print("==========end get url==========")
+async def setup_db(app, loop):
+    app.db = await db_setup(app, loop)
 
 if __name__ == '__main__':
-    '''执行多个任务,wait'''
-    start_time=time.time()
     loop=asyncio.get_event_loop()
-    tasks=[get_html("https://www.baidu.com") for i in range(10)]
-    loop.run_until_complete(asyncio.wait(tasks))        #接受一个可迭代对象
-    print(time.time()-start_time)
+    loop.run_until_complete(setup_db())

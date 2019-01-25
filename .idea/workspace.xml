@@ -2,16 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d59d3582-59b3-40fc-9a4c-fcf62995e437" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Test35.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Test35.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test2.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Thread/coroutine/asyncio/asyncio2_return_callback.py" beforeDir="false" afterPath="$PROJECT_DIR$/Thread/coroutine/asyncio/asyncio2_return_callback.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Thread/coroutine/asyncio/asyncio_spider/chaping.py" beforeDir="false" afterPath="$PROJECT_DIR$/Thread/coroutine/asyncio/asyncio_spider/chaping.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/oop/__new__&amp;metaclass/metaclass.py" beforeDir="false" afterPath="$PROJECT_DIR$/oop/__new__&amp;metaclass/metaclass.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/oop/__new__&amp;metaclass/orm.py" beforeDir="false" afterPath="$PROJECT_DIR$/oop/__new__&amp;metaclass/orm.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test.py" beforeDir="false" afterPath="$PROJECT_DIR$/Test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oop/super/super.py" beforeDir="false" afterPath="$PROJECT_DIR$/oop/super/super.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -24,6 +17,7 @@
     <SUITE FILE_PATH="coverage/Test35$abc_demo.coverage" NAME="abc_demo Coverage Results" MODIFIED="1546936700450" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/oop/ABC" />
     <SUITE FILE_PATH="coverage/Test35$functools.coverage" NAME="functools Coverage Results" MODIFIED="1546852244476" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/functools" />
     <SUITE FILE_PATH="coverage/Test35$concurrent_futures.coverage" NAME="concurrent_futures Coverage Results" MODIFIED="1547193696347" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Thread/thread" />
+    <SUITE FILE_PATH="coverage/Test35$xml_.coverage" NAME="xml_ Coverage Results" MODIFIED="1548404267175" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/util" />
     <SUITE FILE_PATH="coverage/Test35$abc.coverage" NAME="abc Coverage Results" MODIFIED="1546937351582" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/oop/ABC" />
     <SUITE FILE_PATH="coverage/Test35$2_6.coverage" NAME="2_6 Coverage Results" MODIFIED="1546827546828" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/High_Level_Coding_python3/2" />
     <SUITE FILE_PATH="coverage/Test35$getitem.coverage" NAME="getitem Coverage Results" MODIFIED="1546930991258" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/oop/__getitem__&amp;__setitem__" />
@@ -95,7 +89,7 @@
     <SUITE FILE_PATH="coverage/Test35$asyncio4_nest.coverage" NAME="asyncio4_nest Coverage Results" MODIFIED="1547513180887" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Thread/coroutine/asyncio" />
     <SUITE FILE_PATH="coverage/Test35$3_2.coverage" NAME="3_2 Coverage Results" MODIFIED="1546827886404" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/High_Level_Coding_python3/3" />
     <SUITE FILE_PATH="coverage/Test35$asyncio8_spider.coverage" NAME="asyncio8_spider Coverage Results" MODIFIED="1547293210001" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Thread/coroutine/asyncio" />
-    <SUITE FILE_PATH="coverage/Test35$Test.coverage" NAME="Test Coverage Results" MODIFIED="1547451017341" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Test35$Test.coverage" NAME="Test Coverage Results" MODIFIED="1547553726534" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Test35$flucent_param_decorate.coverage" NAME="flucent_param_decorate Coverage Results" MODIFIED="1546912938231" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/decorate" />
     <SUITE FILE_PATH="coverage/Test35$asyncio8_queue.coverage" NAME="asyncio8_queue Coverage Results" MODIFIED="1547432841576" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Thread/coroutine/asyncio" />
     <SUITE FILE_PATH="coverage/Test35$jobbole.coverage" NAME="jobbole Coverage Results" MODIFIED="1547449013392" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Thread/coroutine/asyncio/asyncio_spider" />
@@ -151,20 +145,20 @@
     <session id="859999802">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="6" />
-          <entry key="project.open.time.0" value="5" />
+          <entry key="project.closed" value="16" />
+          <entry key="project.open.time.0" value="14" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.4" value="3" />
           <entry key="project.open.time.5" value="2" />
           <entry key="project.open.time.7" value="1" />
-          <entry key="project.opened" value="12" />
+          <entry key="project.opened" value="21" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="jpeg" value="1" />
           <entry key="json" value="1" />
-          <entry key="py" value="379" />
+          <entry key="py" value="397" />
           <entry key="pyi" value="6" />
           <entry key="txt" value="4" />
         </counts>
@@ -174,7 +168,7 @@
           <entry key="Image" value="1" />
           <entry key="JSON" value="1" />
           <entry key="PLAIN_TEXT" value="4" />
-          <entry key="Python" value="379" />
+          <entry key="Python" value="397" />
           <entry key="PythonStub" value="6" />
         </counts>
       </usages-collector>
@@ -182,14 +176,14 @@
         <counts>
           <entry key="Python Console" value="62" />
           <entry key="dummy" value="208" />
-          <entry key="py" value="19382" />
-          <entry key="txt" value="34" />
+          <entry key="py" value="19554" />
+          <entry key="txt" value="35" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="PLAIN_TEXT" value="242" />
-          <entry key="Python" value="19444" />
+          <entry key="PLAIN_TEXT" value="243" />
+          <entry key="Python" value="19616" />
         </counts>
       </usages-collector>
     </session>
@@ -197,26 +191,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Thread/coroutine/asyncio/asyncio_spider/chaping.py">
+        <entry file="file://$PROJECT_DIR$/High_Level_Coding_python3/2/2_7.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="35">
-              <caret line="38" column="41" selection-start-line="38" selection-start-column="41" selection-end-line="38" selection-end-column="41" />
-              <folding>
-                <element signature="e#0#14#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Thread/coroutine/asyncio/asyncio_spider/jobbole_list.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="35" column="44" selection-start-line="35" selection-start-column="44" selection-end-line="35" selection-end-column="44" />
-              <folding>
-                <element signature="e#0#14#0" expanded="true" />
-                <marker date="1547432776674" expanded="true" signature="309:310" ph="..." />
-              </folding>
+            <state relative-caret-position="111">
+              <caret line="9" selection-start-line="9" selection-end-line="9" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -249,9 +227,10 @@
       <find>session</find>
       <find>waitting_urls</find>
       <find>await</find>
-      <find>aiohttp.ClientSession()</find>
       <find>acquire</find>
       <find>sem</find>
+      <find>aiohttp.ClientSession()</find>
+      <find>par</find>
     </findStrings>
     <replaceStrings>
       <replace>lock</replace>
@@ -304,17 +283,17 @@
         <option value="$PROJECT_DIR$/Thread/coroutine/asyncio/asyncio8_queue.py" />
         <option value="$PROJECT_DIR$/Thread/coroutine/asyncio/asyncio10_spider_queue.py" />
         <option value="$PROJECT_DIR$/Test2.py" />
-        <option value="$PROJECT_DIR$/Test.py" />
         <option value="$PROJECT_DIR$/Thread/coroutine/asyncio/asyncio_pytest.py" />
         <option value="$PROJECT_DIR$/Thread/coroutine/asyncio/asyncio_pytest/asyncio_pytest.py" />
         <option value="$PROJECT_DIR$/requirements.txt" />
         <option value="$PROJECT_DIR$/Thread/coroutine/asyncio/asyncio1.py" />
-        <option value="$PROJECT_DIR$/oop/super/super.py" />
         <option value="$PROJECT_DIR$/oop/__new__&amp;metaclass/metaclass.py" />
         <option value="$PROJECT_DIR$/oop/__new__&amp;metaclass/orm.py" />
         <option value="$PROJECT_DIR$/Thread/coroutine/asyncio/asyncio2_return_callback.py" />
         <option value="$PROJECT_DIR$/Thread/coroutine/asyncio/asyncio_spider/chaping.py" />
         <option value="$PROJECT_DIR$/Thread/coroutine/asyncio/asyncio_spider/chaping2.py" />
+        <option value="$PROJECT_DIR$/Test.py" />
+        <option value="$PROJECT_DIR$/oop/super/super.py" />
       </list>
     </option>
   </component>
@@ -338,12 +317,24 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="Test35" type="b2602c69:ProjectViewProjectNode" />
               <item name="Test35" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Test35" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Test35" type="462c0819:PsiDirectoryNode" />
+              <item name="High_Level_Coding_python3" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Test35" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Test35" type="462c0819:PsiDirectoryNode" />
+              <item name="High_Level_Coding_python3" type="462c0819:PsiDirectoryNode" />
+              <item name="2" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Test35" type="b2602c69:ProjectViewProjectNode" />
@@ -375,30 +366,29 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://E:/workspace3/Test35/oop/__new__&amp;metaclass/metaclass.py" />
     <property name="WebServerToolWindowFactoryState" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../gain_pro" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\workspace3\Test35\Thread\coroutine\asyncio\asyncio_spider" />
+      <recent name="E:\workspace3\Test35" />
+      <recent name="E:\workspace3\Test35\Thread\coroutine\asyncio" />
+      <recent name="E:\workspace3\Test35\Thread\process" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\workspace3\Test35\Thread\coroutine\asyncio\asyncio_pytest" />
       <recent name="E:\workspace3\Test35\Thread\coroutine\asyncio\asyncio_spider" />
       <recent name="E:\workspace3\Test35\Thread\coroutine" />
       <recent name="E:\workspace3\Test35\Thread\thread" />
       <recent name="E:\workspace3\Test35\Thread\thread\communite" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\workspace3\Test35" />
-      <recent name="E:\workspace3\Test35\Thread\coroutine\asyncio\asyncio_spider" />
-      <recent name="E:\workspace3\Test35\Thread\coroutine\asyncio" />
-      <recent name="E:\workspace3\Test35\Thread\process" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -413,7 +403,29 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.chaping2">
+  <component name="RunManager" selected="Python.xml_">
+    <configuration name="Test" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Test35" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="asyncio4_nest" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Test35" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -480,7 +492,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="metaclass" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="xml_" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Test35" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -488,34 +500,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/oop/__new__&amp;metaclass" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/util" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/oop/__new__&amp;metaclass/metaclass.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="super" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="Test35" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/oop/super" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/oop/super/super.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/util/xml_.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -526,18 +516,18 @@
     </configuration>
     <list>
       <item itemvalue="Python.chaping" />
-      <item itemvalue="Python.super" />
-      <item itemvalue="Python.metaclass" />
       <item itemvalue="Python.asyncio4_nest" />
       <item itemvalue="Python.chaping2" />
+      <item itemvalue="Python.Test" />
+      <item itemvalue="Python.xml_" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.xml_" />
+        <item itemvalue="Python.Test" />
         <item itemvalue="Python.chaping2" />
         <item itemvalue="Python.chaping" />
         <item itemvalue="Python.asyncio4_nest" />
-        <item itemvalue="Python.metaclass" />
-        <item itemvalue="Python.super" />
       </list>
     </recent_temporary>
   </component>
@@ -622,13 +612,21 @@
       <option name="project" value="LOCAL" />
       <updated>1547459783879</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="2019/1/15">
+      <created>1547523899364</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1547523899364</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4991274" visible="true" weight="0.26972282" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4991274" visible="true" weight="0.1609808" />
       <window_info id="Structure" order="1" sideWeight="0.5008726" side_tool="true" weight="0.19367589" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -664,47 +662,10 @@
     <MESSAGE value="2019/1/11" />
     <MESSAGE value="2019/1/12" />
     <MESSAGE value="2019/1/14" />
-    <option name="LAST_COMMIT_MESSAGE" value="2019/1/14" />
+    <MESSAGE value="2019/1/15" />
+    <option name="LAST_COMMIT_MESSAGE" value="2019/1/15" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://C:/Python36/Lib/multiprocessing/pool.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="217">
-          <caret line="669" selection-start-line="669" selection-end-line="669" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Thread/signal/signal/sig2.py" />
-    <entry file="file://$PROJECT_DIR$/Thread/thread/communite/2_lock.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="27" selection-start-line="27" selection-end-line="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Thread/thread/communite/1_queue.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="3" lean-forward="true" selection-start-column="3" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Thread/thread/join.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="254">
-          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Thread/signal/signal/driver.py" />
-    <entry file="file://$PROJECT_DIR$/Thread/signal/signal/sig.py" />
-    <entry file="file://$PROJECT_DIR$/Thread/thread/communite/4_semaphore.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="931">
-          <caret line="49" column="34" lean-forward="true" selection-start-line="49" selection-start-column="34" selection-end-line="49" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Thread/thread/communite/3_condition.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="76">
@@ -864,55 +825,10 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Thread/coroutine/asyncio/asyncio_pytest/asyncio_pytest.py" />
-    <entry file="file://$PROJECT_DIR$/Test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="13" column="21" selection-start-line="13" selection-start-column="21" selection-end-line="13" selection-end-column="21" />
-          <folding>
-            <element signature="e#0#14#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/oop/super/super.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="31" column="23" selection-start-line="31" selection-start-column="23" selection-end-line="31" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/oop/__new__&amp;metaclass/__new__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/oop/__new__&amp;metaclass/metaclass.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="429">
-          <caret line="61" column="11" lean-forward="true" selection-start-line="61" selection-start-column="11" selection-end-line="61" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/oop/__new__&amp;metaclass/orm.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1327">
-          <caret line="93" column="46" selection-start-line="93" selection-start-column="46" selection-end-line="93" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Thread/coroutine/asyncio/asyncio1.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
           <caret line="15" column="13" lean-forward="true" selection-start-line="9" selection-start-column="23" selection-end-line="15" selection-end-column="13" />
-          <folding>
-            <element signature="e#0#14#0" expanded="true" />
-            <marker date="1547428482265" expanded="true" signature="52:57" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Thread/coroutine/asyncio/asyncio2_return_callback.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
         </state>
       </provider>
     </entry>
@@ -920,13 +836,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="437">
           <caret line="23" column="20" selection-start-line="21" selection-start-column="12" selection-end-line="23" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Thread/coroutine/asyncio/asyncio4_nest.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
         </state>
       </provider>
     </entry>
@@ -948,9 +857,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="477">
           <caret line="26" column="63" lean-forward="true" selection-start-line="26" selection-start-column="63" selection-end-line="26" selection-end-column="63" />
-          <folding>
-            <element signature="e#46#60#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -958,9 +864,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
           <caret line="18" column="20" lean-forward="true" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="20" />
-          <folding>
-            <element signature="e#130#154#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -968,9 +871,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-179">
           <caret line="14" column="38" selection-start-line="14" selection-start-column="38" selection-end-line="14" selection-end-column="38" />
-          <folding>
-            <element signature="e#93#107#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -978,15 +878,72 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="454">
           <caret line="62" selection-start-line="62" selection-end-line="62" />
-          <folding>
-            <element signature="e#0#14#0" expanded="true" />
-          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Thread/coroutine/asyncio/asyncio_spider/chaping2.py" />
+    <entry file="file://$PROJECT_DIR$/decorate/Test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="15" selection-start-line="15" selection-end-line="18" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/inner_lib/functools/functools.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="16" column="36" selection-start-line="16" selection-start-column="36" selection-end-line="16" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="13" column="39" selection-start-line="13" selection-start-column="39" selection-end-line="13" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Thread/coroutine/asyncio/asyncio2_return_callback.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Thread/coroutine/asyncio/asyncio4_nest.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Thread/thread/communite/1_queue.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="17" column="12" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/oop/__new__&amp;metaclass/__new__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/oop/__new__&amp;metaclass/metaclass.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1159">
+          <caret line="61" column="11" selection-start-line="61" selection-start-column="11" selection-end-line="61" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/oop/__new__&amp;metaclass/orm.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1767">
+          <caret line="93" column="46" selection-start-line="93" selection-start-column="46" selection-end-line="93" selection-end-column="46" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Thread/coroutine/asyncio/asyncio_spider/jobbole_list.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
+        <state relative-caret-position="589">
           <caret line="35" column="44" selection-start-line="35" selection-start-column="44" selection-end-line="35" selection-end-column="44" />
           <folding>
             <element signature="e#0#14#0" expanded="true" />
@@ -995,23 +952,43 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Thread/coroutine/asyncio/asyncio_spider/chaping2.py">
+    <entry file="file://$PROJECT_DIR$/High_Level_Coding_python3/2/2_6.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Thread/coroutine/asyncio/asyncio_spider/chaping.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="428">
-          <caret line="72" column="26" lean-forward="true" selection-start-line="72" selection-start-column="26" selection-end-line="72" selection-end-column="26" />
+        <state relative-caret-position="1102">
+          <caret line="70" column="41" selection-start-line="70" selection-start-column="41" selection-end-line="70" selection-end-column="41" />
           <folding>
             <element signature="e#0#14#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Thread/coroutine/asyncio/asyncio_spider/chaping.py">
+    <entry file="file://$PROJECT_DIR$/oop/super/super.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="35">
-          <caret line="38" column="41" selection-start-line="38" selection-start-column="41" selection-end-line="38" selection-end-column="41" />
-          <folding>
-            <element signature="e#0#14#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="320">
+          <caret line="31" column="21" selection-start-line="31" selection-start-column="21" selection-end-line="31" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/High_Level_Coding_python3/4/4_1.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/High_Level_Coding_python3/3/3_2.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/oop/__get__&amp;__set__&amp;__delete__/7_6.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="833">
+          <caret line="62" column="33" selection-start-line="62" selection-start-column="33" selection-end-line="62" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/High_Level_Coding_python3/2/2_7.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="111">
+          <caret line="9" selection-start-line="9" selection-end-line="9" selection-end-column="13" />
         </state>
       </provider>
     </entry>

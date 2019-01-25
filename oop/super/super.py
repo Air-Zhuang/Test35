@@ -29,6 +29,24 @@ b=B()       #加上super之后调用父类的初始化方法
 print()
 '''==============================================='''
 class A:
+    def __init__(self,a=1,b=2,c=3):
+        self.a=a
+        self.b=b
+        self.c=c
+
+class B(A):
+    def __init__(self,a):
+        super().__init__(a=a)   #只重载一个变量，其他变量不传，会自动调用父类的变量：b=2,c=3
+    def show(self):
+        print(self.a)
+        print(self.b)
+        print(self.c)
+
+b=B(10)
+b.show()
+print()
+'''==============================================='''
+class A:
     def __init__(self,a=1,b=2):
         self.a=a
         self.b=b
