@@ -2,9 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d59d3582-59b3-40fc-9a4c-fcf62995e437" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/util/file/LocList_en.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Test.py" beforeDir="false" afterPath="$PROJECT_DIR$/Test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/oop/super/super.py" beforeDir="false" afterPath="$PROJECT_DIR$/oop/super/super.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/util/file/LocList_cn.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/util/xml_.py" beforeDir="false" afterPath="$PROJECT_DIR$/util/xml_.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -17,7 +19,7 @@
     <SUITE FILE_PATH="coverage/Test35$abc_demo.coverage" NAME="abc_demo Coverage Results" MODIFIED="1546936700450" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/oop/ABC" />
     <SUITE FILE_PATH="coverage/Test35$functools.coverage" NAME="functools Coverage Results" MODIFIED="1546852244476" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/functools" />
     <SUITE FILE_PATH="coverage/Test35$concurrent_futures.coverage" NAME="concurrent_futures Coverage Results" MODIFIED="1547193696347" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Thread/thread" />
-    <SUITE FILE_PATH="coverage/Test35$xml_.coverage" NAME="xml_ Coverage Results" MODIFIED="1548404267175" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/util" />
+    <SUITE FILE_PATH="coverage/Test35$xml_.coverage" NAME="xml_ Coverage Results" MODIFIED="1548466303520" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/util" />
     <SUITE FILE_PATH="coverage/Test35$abc.coverage" NAME="abc Coverage Results" MODIFIED="1546937351582" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/oop/ABC" />
     <SUITE FILE_PATH="coverage/Test35$2_6.coverage" NAME="2_6 Coverage Results" MODIFIED="1546827546828" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/High_Level_Coding_python3/2" />
     <SUITE FILE_PATH="coverage/Test35$getitem.coverage" NAME="getitem Coverage Results" MODIFIED="1546930991258" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/oop/__getitem__&amp;__setitem__" />
@@ -89,7 +91,7 @@
     <SUITE FILE_PATH="coverage/Test35$asyncio4_nest.coverage" NAME="asyncio4_nest Coverage Results" MODIFIED="1547513180887" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Thread/coroutine/asyncio" />
     <SUITE FILE_PATH="coverage/Test35$3_2.coverage" NAME="3_2 Coverage Results" MODIFIED="1546827886404" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/High_Level_Coding_python3/3" />
     <SUITE FILE_PATH="coverage/Test35$asyncio8_spider.coverage" NAME="asyncio8_spider Coverage Results" MODIFIED="1547293210001" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Thread/coroutine/asyncio" />
-    <SUITE FILE_PATH="coverage/Test35$Test.coverage" NAME="Test Coverage Results" MODIFIED="1547553726534" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Test35$Test.coverage" NAME="Test Coverage Results" MODIFIED="1548466768550" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Test35$flucent_param_decorate.coverage" NAME="flucent_param_decorate Coverage Results" MODIFIED="1546912938231" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/decorate" />
     <SUITE FILE_PATH="coverage/Test35$asyncio8_queue.coverage" NAME="asyncio8_queue Coverage Results" MODIFIED="1547432841576" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Thread/coroutine/asyncio" />
     <SUITE FILE_PATH="coverage/Test35$jobbole.coverage" NAME="jobbole Coverage Results" MODIFIED="1547449013392" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Thread/coroutine/asyncio/asyncio_spider" />
@@ -145,56 +147,95 @@
     <session id="859999802">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="16" />
-          <entry key="project.open.time.0" value="14" />
+          <entry key="project.closed" value="17" />
+          <entry key="project.open.time.0" value="16" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.4" value="3" />
           <entry key="project.open.time.5" value="2" />
-          <entry key="project.open.time.7" value="1" />
-          <entry key="project.opened" value="21" />
+          <entry key="project.open.time.7" value="2" />
+          <entry key="project.opened" value="24" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
+          <entry key="" value="4" />
           <entry key="jpeg" value="1" />
           <entry key="json" value="1" />
-          <entry key="py" value="397" />
+          <entry key="py" value="400" />
           <entry key="pyi" value="6" />
           <entry key="txt" value="4" />
+          <entry key="xml" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="Image" value="1" />
-          <entry key="JSON" value="1" />
+          <entry key="JSON" value="5" />
           <entry key="PLAIN_TEXT" value="4" />
-          <entry key="Python" value="397" />
+          <entry key="Python" value="400" />
           <entry key="PythonStub" value="6" />
+          <entry key="XML" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="Python Console" value="62" />
           <entry key="dummy" value="208" />
-          <entry key="py" value="19554" />
-          <entry key="txt" value="35" />
+          <entry key="py" value="20214" />
+          <entry key="txt" value="37" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="PLAIN_TEXT" value="243" />
-          <entry key="Python" value="19616" />
+          <entry key="PLAIN_TEXT" value="245" />
+          <entry key="Python" value="20276" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Thread/coroutine/asyncio/asyncio_spider/chaping.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1254">
+              <caret line="70" column="41" selection-start-line="70" selection-start-column="41" selection-end-line="70" selection-end-column="41" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/High_Level_Coding_python3/2/2_7.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="111">
+            <state relative-caret-position="171">
               <caret line="9" selection-start-line="9" selection-end-line="9" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/util/xml_.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="57">
+              <caret line="3" selection-start-line="3" selection-end-line="5" selection-end-column="58" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/util/file/LocList_en.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1091">
+              <caret line="4140" column="37" selection-start-line="4140" selection-start-column="37" selection-end-line="4140" selection-end-column="37" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Test.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="95">
+              <caret line="6" column="13" lean-forward="true" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -231,6 +272,10 @@
       <find>sem</find>
       <find>aiohttp.ClientSession()</find>
       <find>par</find>
+      <find>46</find>
+      <find>美国</find>
+      <find>united k</find>
+      <find>USA</find>
     </findStrings>
     <replaceStrings>
       <replace>lock</replace>
@@ -243,7 +288,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/oop/__new__&amp;metaclass/__new__.py" />
         <option value="$PROJECT_DIR$/util/big_data_read.py" />
         <option value="$PROJECT_DIR$/Net/tcp_udp/tcp_server.py" />
         <option value="$PROJECT_DIR$/Net/tcp_udp/tcp_client.py" />
@@ -292,8 +336,9 @@
         <option value="$PROJECT_DIR$/Thread/coroutine/asyncio/asyncio2_return_callback.py" />
         <option value="$PROJECT_DIR$/Thread/coroutine/asyncio/asyncio_spider/chaping.py" />
         <option value="$PROJECT_DIR$/Thread/coroutine/asyncio/asyncio_spider/chaping2.py" />
-        <option value="$PROJECT_DIR$/Test.py" />
         <option value="$PROJECT_DIR$/oop/super/super.py" />
+        <option value="$PROJECT_DIR$/util/xml_.py" />
+        <option value="$PROJECT_DIR$/Test.py" />
       </list>
     </option>
   </component>
@@ -328,17 +373,6 @@
             <path>
               <item name="Test35" type="b2602c69:ProjectViewProjectNode" />
               <item name="Test35" type="462c0819:PsiDirectoryNode" />
-              <item name="High_Level_Coding_python3" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Test35" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Test35" type="462c0819:PsiDirectoryNode" />
-              <item name="High_Level_Coding_python3" type="462c0819:PsiDirectoryNode" />
-              <item name="2" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Test35" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Test35" type="462c0819:PsiDirectoryNode" />
               <item name="Thread" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -362,6 +396,17 @@
               <item name="asyncio" type="462c0819:PsiDirectoryNode" />
               <item name="asyncio_spider" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="Test35" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Test35" type="462c0819:PsiDirectoryNode" />
+              <item name="util" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Test35" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Test35" type="462c0819:PsiDirectoryNode" />
+              <item name="util" type="462c0819:PsiDirectoryNode" />
+              <item name="file" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -378,6 +423,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\workspace3\Test35\util\file" />
       <recent name="E:\workspace3\Test35\Thread\coroutine\asyncio\asyncio_spider" />
       <recent name="E:\workspace3\Test35" />
       <recent name="E:\workspace3\Test35\Thread\coroutine\asyncio" />
@@ -403,7 +449,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.xml_">
+  <component name="RunManager" selected="Python.Test">
     <configuration name="Test" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Test35" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -523,8 +569,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.xml_" />
         <item itemvalue="Python.Test" />
+        <item itemvalue="Python.xml_" />
         <item itemvalue="Python.chaping2" />
         <item itemvalue="Python.chaping" />
         <item itemvalue="Python.asyncio4_nest" />
@@ -619,19 +665,26 @@
       <option name="project" value="LOCAL" />
       <updated>1547523899364</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="2019/1/25">
+      <created>1548404285284</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1548404285284</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4991274" visible="true" weight="0.1609808" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4991274" visible="true" weight="0.13166311" />
       <window_info id="Structure" order="1" sideWeight="0.5008726" side_tool="true" weight="0.19367589" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49946696" weight="0.43322477" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49946696" visible="true" weight="0.27470142" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.2801303" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -663,30 +716,10 @@
     <MESSAGE value="2019/1/12" />
     <MESSAGE value="2019/1/14" />
     <MESSAGE value="2019/1/15" />
-    <option name="LAST_COMMIT_MESSAGE" value="2019/1/15" />
+    <MESSAGE value="2019/1/25" />
+    <option name="LAST_COMMIT_MESSAGE" value="2019/1/25" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Thread/thread/communite/3_condition.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/Python36/Lib/concurrent/futures/thread.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-342">
-          <caret line="105" column="39" lean-forward="true" selection-start-line="105" selection-start-column="39" selection-end-line="105" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/Python36/Lib/concurrent/futures/_base.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="141" selection-start-line="141" selection-end-line="141" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Thread/thread/concurrent_futures.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="152">
@@ -896,13 +929,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="13" column="39" selection-start-line="13" selection-start-column="39" selection-end-line="13" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Thread/coroutine/asyncio/asyncio2_return_callback.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="380">
@@ -945,25 +971,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="589">
           <caret line="35" column="44" selection-start-line="35" selection-start-column="44" selection-end-line="35" selection-end-column="44" />
-          <folding>
-            <element signature="e#0#14#0" expanded="true" />
-            <marker date="1547432776674" expanded="true" signature="309:310" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/High_Level_Coding_python3/2/2_6.py">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Thread/coroutine/asyncio/asyncio_spider/chaping.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1102">
-          <caret line="70" column="41" selection-start-line="70" selection-start-column="41" selection-end-line="70" selection-end-column="41" />
-          <folding>
-            <element signature="e#0#14#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/oop/super/super.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -985,10 +997,45 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Thread/coroutine/asyncio/asyncio_spider/chaping.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1254">
+          <caret line="70" column="41" selection-start-line="70" selection-start-column="41" selection-end-line="70" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/High_Level_Coding_python3/2/2_7.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="111">
+        <state relative-caret-position="171">
           <caret line="9" selection-start-line="9" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/util/file/LocList_cn.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="1271" column="33" lean-forward="true" selection-start-line="1271" selection-start-column="33" selection-end-line="1271" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/util/file/LocList_en.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1091">
+          <caret line="4140" column="37" selection-start-line="4140" selection-start-column="37" selection-end-line="4140" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/util/xml_.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="3" selection-start-line="3" selection-end-line="5" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="6" column="13" lean-forward="true" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
         </state>
       </provider>
     </entry>
