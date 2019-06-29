@@ -33,3 +33,39 @@ l=list(range(1000))
 random.shuffle(l)
 t=TopK(l,10)
 print(t.get_topk())
+
+"""
+合并k个有序链表
+https://leetcode.com/problems/merge-k-sorted-lists/
+"""
+from heapq import heapify,heappop
+
+# Definition for singly-linked list.
+# class ListNode:
+#     def __init__(self, x):
+#         self.val = x
+#         self.next = None
+
+class Solution:
+    def mergeKLists(self, lists: List[ListNode]) -> ListNode:
+        #读取所有节点值
+        if not lists:   #判断lists是否是空
+            return None
+        h=[]
+        for node in lists:
+            while node:
+                h.append(node.val)
+                node=node.next
+        #构造一个最小堆
+        if not h:       #判断lists是否是空
+            return None
+        heapify(h)      #将list转换成一个最小堆
+
+        #构造链表
+        root=ListNode(heappop(h))
+        curnode=root
+        while h:
+            nextnode=ListNode(heappop(h))
+            curnode.next=nextnode
+            curnode=nextnode
+        return root
