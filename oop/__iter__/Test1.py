@@ -32,3 +32,22 @@ class MyIter(object):
 it=iter(MyIter(range(10)))
 for i in it:
     print(i)
+
+class Vector:
+    def __init__(self,lst):
+        self._values=list(lst)
+
+    def __add__(self, another):
+        """向量加法，返回结果向量"""
+        return Vector([a+b for a,b in zip(self,another)])
+
+    def __iter__(self):
+        """返回向量的迭代器"""
+        return self._values.__iter__()
+
+    def __str__(self):
+        return "({})".format(",".join(str(e) for e in self._values))
+u=Vector([5,2])
+u2=Vector([3,4])
+print()
+print(u+u2)
