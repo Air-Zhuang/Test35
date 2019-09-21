@@ -4,7 +4,7 @@ print(brl)
 print(format(brl,'0.4f'))   #f表示小数形式的float类型
 print('1 BRL = {rate:0.2f} USD'.format(rate=brl))
 print(format(42,'b'))       #b和x分别表示二进制和十六进制的int类型
-print(format(2/3,'.1%'))    #  %表示百分数形式
+print(format(2/3,'.2%'))    #  %表示百分数形式
 print()
 
 #格式规范微语言是可拓展的

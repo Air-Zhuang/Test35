@@ -45,6 +45,15 @@ gen=itertools.takewhile(lambda n:n<3,itertools.count(1,0.5))
 print(list(gen))
 print()
 
+'''itertools.dropwhile(predicate,it)'''
+'''处理it,跳过predicate的计算结果为真值的元素，然后产出剩下的各个元素(不再进一步检查)
+    不再进一步检查，意味着遇到False,开始后面的都返回'''
+print('itertools.dropwhile------------------:')
+def vowel(c):
+    return c.lower() in 'aeiou'
+print(list(itertools.dropwhile(vowel,'Aardvark')))
+print()
+
 '''itertools.cycle'''
 '''从列表中取元素，到列表尾后再从头取...
 无限循环，因为cycle生成的是一个无界的失代器'''
@@ -87,15 +96,6 @@ print()
 '''并行处理两个可迭代的对象;如果selector_it中的元素是真值，产出it中对应的元素'''
 print('itertools.compress------------------:')
 print(list(itertools.compress('Aardvark',(1,0,1,1,0,1))))
-print()
-
-'''itertools.dropwhile(predicate,it)'''
-'''处理it,跳过predicate的计算结果为真值的元素，然后产出剩下的各个元素(不再进一步检查)
-    不再进一步检查，意味着遇到False,开始后面的都返回'''
-print('itertools.dropwhile------------------:')
-def vowel(c):
-    return c.lower() in 'aeiou'
-print(list(itertools.dropwhile(vowel,'Aardvark')))
 print()
 
 '''itertools.filterfalse(predicate,it)'''
@@ -181,16 +181,8 @@ print()
 '''itertools.tee(it,n=2)'''
 '''产出一个由n个生成器组成的元组，每个生成器用于单独产出输入的可迭代对象中的元素'''
 print('itertools.tee------------------:')
-print(list(itertools.tee('ABC')))
-g1,g2=itertools.tee('ABC')
-print(next(g1))
-print(next(g2))
-print(next(g2))
-print(list(g1))
-print(list(g2))
-print(list(zip(*itertools.tee('ABC'))))
-print()
-
+for i in itertools.tee('ABC'):
+    print(list(i))
 
 
 
