@@ -4,7 +4,7 @@ def binary_search(list,searchNum):
     low=0
     high=len(list)-1
     while low<=high:
-        mid=(low+high)/2
+        mid=(low+high)//2
         if list[mid]==searchNum:
             print('总共查询了%d次' % item)
             return mid

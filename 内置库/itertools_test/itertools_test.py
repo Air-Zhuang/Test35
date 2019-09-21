@@ -90,6 +90,7 @@ print('itertools.chain.from_iterable------------------:')
 print(list(itertools.chain.from_iterable(enumerate('ABC'))))
 d2=[(1,'A'),(2,'B'),(3,'C')]
 print(list(itertools.chain.from_iterable(d2)))
+print(list(itertools.chain(*d2)))       #等于上面
 print()
 
 '''itertools.compress(it,selector_it)'''

@@ -18,4 +18,4 @@ if __name__ == '__main__':
     '''协程嵌套'''
     loop=asyncio.get_event_loop()
     loop.run_until_complete(print_sum(1,2))
-    loop.close()
+    # loop.close()
